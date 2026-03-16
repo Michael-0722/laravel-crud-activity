@@ -37,7 +37,7 @@ class PostController extends Controller
 
         Post::create($request->all());
 
-        return redirect()->route('post.index')->with('success', 'Post created sucessfully.');
+        return redirect()->route('posts.index')->with('success', 'Post created sucessfully.');
 
     }
 
